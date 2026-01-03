@@ -1,1 +1,10 @@
+import cv2
+
+img = cv2.imread("day1_capture.jpg")
+
+resized_img = cv2.resize(img, (300, 200))  # (width, height)
+
+cv2.imshow("Resized Image", resized_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
